@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+}
+
+
+/* Header */
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 0 25px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* Facebook Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo h2 {
+    color: #1877f2;
+    font-size: 27px;
+}
+
+
+/* Search */
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 55px;
+}
+
+.input {
+    width: 300px;
+    height: 36px;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    outline: none;
+    font-size: 14px;
+    background-color: #f0f2f5;
+}
+
+.input:focus {
+    border-color: #1877f2;
+}
+
+
+/* Search Button */
+
+.button {
+    height: 34px;
+    width: 65px;
+    margin-left: 8px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.button:hover {
+    background-color: #166fe5;
+}
+
+
+/* Main Area */
+
+.main-box {
+    display: flex;
+    max-width: 1100px;
+    margin: 25px auto;
+    gap: 25px;
+}
+
+
+/* Left Filters */
+
+.filters {
+    width: 220px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    height: fit-content;
+    border: 1px solid #ddd;
+}
+
+.filters h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.filter-item {
+    padding: 12px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.filter-item:hover {
+    background-color: #f0f2f5;
+}
+
+.filter-item.active {
+    background-color: #e7f3ff;
+    color: #1877f2;
+    font-weight: bold;
+}
+
+
+/* Results */
+
+.results {
+    flex: 1;
+}
+
+.results h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+/* Profile Card */
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+
+/* Profile Image */
+
+.profile-img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Profile Information */
+
+.profile-info {
+    margin-left: 15px;
+    flex: 1;
+}
+
+.profile-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.profile-info p {
+    color: #65676b;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.profile-info span {
+    color: #65676b;
+    font-size: 13px;
+}
+
+
+/* Add Friend */
+
+.follow-button {
+    background-color: #e7f3ff;
+    color: #1877f2;
+    border: none;
+    padding: 9px 13px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.follow-button:hover {
+    background-color: #d8ebff;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .header {
+        height: auto;
+        padding: 15px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .search-container {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .main-box {
+        flex-direction: column;
+        margin: 15px;
+    }
+
+    .filters {
+        width: 100%;
+    }
+
+    .profile-card {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+}

@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 350px;
+    height: 65vh;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* .body {
+    height: 100vh;
+} */
+
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 0px;
+    width: 90%;
+}
+
+.button{
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90%;
+    max-width: 320px;
+}
+
+.password-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.or{
+    width: 90%;
+    max-width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.or p{
+    font-size: 16px;
+}
+
+.or span{
+    /* width: 130px; */
+    flex:1;
+    height: 10px;
+    background-color: #c5c1c1;
+}
+
+.facebook{
+    max-width: 320px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.facebook-logo{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.signup-box{
+    width: 90%;
+    max-width: 350px;
+    height: 3vh;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+@media (max-width: 500px) {
+    .login-box {
+        width: 95%;
+        height: auto;
+        min-height: 500px;
+        padding: 15px;
+    }
+
+    .signup-box {
+        width: 95%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .or {
+        width: 100%;
+    }
+
+    .facebook {
+        width: 100%;
+    }
+}

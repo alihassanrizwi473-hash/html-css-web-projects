@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Main */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+
+    padding: 20px;
+}
+
+
+/* Login Box */
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 400px;
+    min-height: 350px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    padding: 20px;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+}
+
+.logo h1 {
+    margin-bottom: 20px;
+}
+
+
+/* Inputs */
+
+.input {
+    padding: 10px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    width: 300px;
+    max-width: 100%;
+
+    font-size: 15px;
+}
+
+.password-box {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Login Button */
+
+.button {
+    background-color: #1a73e8;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    width: 320px;
+    max-width: 100%;
+
+    font-size: 16px;
+}
+
+
+/* Forgot Password */
+
+.forgot-password a {
+    text-decoration: none;
+    color: #1a73e8;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+
+/* Line */
+
+hr {
+    width: 80%;
+
+    border: none;
+
+    border-top: 1px solid #ccc;
+
+    margin: 15px 0;
+}
+
+
+/* Create Account */
+
+.create-button {
+    background-color: #42b72a;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    width: 240px;
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 500px) {
+
+    .main {
+        padding: 15px;
+    }
+
+    .login-box {
+        width: 100%;
+        max-width: 400px;
+
+        padding: 20px 15px;
+    }
+
+    .logo h1 {
+        font-size: 32px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    hr {
+        width: 90%;
+    }
+
+    .create-button {
+        width: 80%;
+    }
+
+    .main p {
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+
+/* Small Mobile */
+
+@media (max-width: 350px) {
+
+    .login-box {
+        padding: 15px 10px;
+    }
+
+    .logo h1 {
+        font-size: 28px;
+    }
+
+    .input {
+        font-size: 14px;
+        padding: 9px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 9px;
+    }
+
+    .create-button {
+        width: 90%;
+        font-size: 13px;
+    }
+
+    .main p {
+        font-size: 12px;
+    }
+}
